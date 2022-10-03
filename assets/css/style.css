@@ -14,9 +14,41 @@ body{
   --green: rgb(34,177,139);
 }
 
-h1,h2,h3,h4{
+h1,h2,h3,h4, h5{
   text-transform: uppercase;
   margin:15px 5px;
+}
+
+form{
+  text-align: left;
+}
+
+
+input{
+  width:35%;
+}
+
+.debug{
+  background-color: lightblue;
+
+  
+}
+
+.blu-debug{
+  background-color: blue;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+.sc-btn{
+  border:1px solid white;
+  border-radius:10px;
+  padding:10px 15px;
+  display: inline-block;
+  width:fit-content;
 }
 
 .sc-wide-cont{
@@ -27,25 +59,25 @@ h1,h2,h3,h4{
   width:40%;
 }
 
-header{
+header, .sc-foot-bottom{
   width:100%;
   background-color: var(--dark);
   color:white;
   height:90px;
 }
 
-.jumbotron{
+.jumbotron, .sc-about{
   background-color: var(--green);
   padding:20px 15px;
   text-align: center;
   color:white;
 }
 
-.jumbo-content .sc-line{
+.jumbo-content .sc-line, .sc-about .sc-line{
   background-color: white;
 }
 
-.sc-portfolio .sc-line{
+.sc-portfolio .sc-line, .sc-contact .sc-line{
   background-color: var(--dark);
 }
 
@@ -56,6 +88,14 @@ header{
   background-color: blueviolet;
   border-radius:50%;
   margin:30px 20px;
+}
+
+.sc-circle-social{
+  border-radius: 50%;
+  padding:15px;
+  width:30px;
+  height:30px;
+  border:1px solid white;
 }
 
 .sc-star{
@@ -69,15 +109,29 @@ header{
   border-radius:5px;
 }
 
-.sc-portfolio{
+.sc-portfolio, .sc-contact{
   background-color: white;
   color:var(--dark);
 }
 
-.card{
+.sc-card{
   border-radius:25px;
-  border:1px solid violet;
   background-color: pink;
   height:200px;
   margin:20px 10px;
+}
+
+/* FOOTER */
+
+footer{
+  color:white;
+  
+}
+
+.sc-foot-top{
+  background-color: var(--petrolium);
+}
+
+{
+
 }
