@@ -99,7 +99,7 @@ header a{
 }
 
 .navbar-brand.dc-logo{
-  font-size:120%;
+  font-size:140%;
   font-weight: bold;;
 }
 
@@ -145,7 +145,73 @@ span.dc-hamburger:hover{
 
 .dc-card{
   margin:20px 10px;
+  position: relative;
 }
+
+.dc-card .dc-overlay{
+  display:none;
+  width:100%;
+  height:100%;
+  color:var(--green);
+  font-size:120%;
+  font-weight: bold;
+  position: absolute;
+  top:0;
+  left:0;
+  transition: .5s ease;
+}
+
+.dc-card:hover .dc-overlay {
+  display:block;
+  transition:0.5s ease;
+  
+ 
+}
+
+.dc-card:hover>img{
+  opacity:50%;
+  transition:0.5s ease;
+
+}
+
+.dc-overlay>span{
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  z-index:8;
+  width:100%;
+  height:100%;
+  
+}
+
+.dc-overlay>span>span{
+  width:2.5rem;
+  height:2.5rem;
+  background-color: white;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  padding:0;
+  position: relative;
+  box-shadow:4px 4px 4px rgba(0,0,0,0.5);
+}
+
+.dc-overlay>span>span:active{
+  box-shadow: none;
+  box-shadow:1px 1px rgba(0,0,0,0.5);
+  color: white;
+  background-color:var(--petrolium);
+  font-weight: bolder;
+}
+
+.dc-overlay i{
+  font-size:2.5rem;
+  margin:0;
+  padding:0;
+  position: absolute;
+  top:-0.9rem;
+  left:0;
+  
+}
+
 
 .dc-card>img{
   max-width: 100%;
